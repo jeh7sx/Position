@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="../css/position.css">
+</head>
+<body>
+     <main>
+    <h1>Position</h1>
+
+    <div class="absolute">
+        <h2>Absolute</h2>
+        <div class="absolute1"><p>Primeira div</p></div>
+        <div class="absolute2"><p>Segunda div</p></div>
+        <div class="absolute3"><p>Terceira div</p></div>
+    </div>
+
+    <div class="relative">
+        <h2>Relative</h2>
+        <div class="relative1"><p>Quarta div</p></div>
+        <div class="relative2"><p>Quinta div</p></div>
+        <div class="relative3"><p>Sexta div</p></div>
+    </div>
+
+    <div class="sticky-top">
+        <h2>Sticky</h2>
+    </div>
+    <div class="sticky">
+       
+        <div class="sticky1"><p>Sétima div</p></div>
+        <div class="sticky2"><p>Oitava div</p></div>
+        <div class="sticky3"><p>Nona div</p></div>
+    </div>
+
+    <!-- position fixed -->
+    <div class="whats">
+    <a href="#"><img src="../img/55008.png" ></a></div>
+
+    <p><b>Absolute:</b> Um elemento com 'position: absolute;' é posicionado em relação ao seu primeiro ancestral que tenha position: relative, absolute, sticky ou fixed. (ou seja se nao houver nenhum elemento "pai" com algum outro "position" o elemento sera posicionado em relação ao elemento '< html >''). Elementos com 'position: absolute;'' são retirados do fluxo normal do documento, o que significa que não ocupam espaço no layout padrão. Você pode usar as propriedades "top", "right", "bottom" e "left" para definir a posição do elemento.</p>
+
+    <p><b>Relative:</b> Um elemento com 'position: relative;' é posicionado em relação à sua div "pai". Isso significa que você pode usar "top", "right", "bottom" e "left" para ajustar a posição do elemento a partir do seu ponto de origem, sem removê-lo do fluxo normal. Outros elementos na página ainda se comportam como se o elemento estivesse em sua posição original, o que pode causar sobreposição.</p>
+
+    <p><b>Sticky:</b> Um elemento com 'position: sticky;' é um híbrido entre relative e fixed. Ele se comporta como relative até que um determinado ponto de rolagem seja atingido, momento em que ele "gruda" (fica "sticky") e se comporta como fixed. Você pode usar "top", "right", "bottom" e "left" para definir quando o elemento deve "grudar". Esse efeito é útil para criar cabeçalhos ou elementos de navegação que permanecem visíveis enquanto o usuário rola a página.
+    (Caso o exemplo acima não esteja tendo nenhum efeito ao rolar a página, aumente o zoom)
+    </p>
+
+    <p><b>Fixed:</b> Um elemento com 'position: fixed;' é posicionado em relação à janela de visualização (viewport), ou seja, ele permanece no mesmo lugar na tela, independentemente de rolagem. Assim como absolute, ele é retirado do fluxo normal do documento. As propriedades "top", "right", "bottom" e "left" podem ser usadas para definir a posição do elemento em relação à janela de visualização.</p>
+
+    </main>
+
+    <footer class="rodape">
+        <hr>
+        <p>Jerry Flores 1º AI</p>
+        Copyright &copy; 2024
+    </footer>
+</body>
+</html>
